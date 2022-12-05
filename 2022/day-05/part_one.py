@@ -24,16 +24,13 @@ def main():
 
     for instruction in instructions:
         quantity = int(instruction.split(' ')[1])
-        origin = int(instruction.split(' ')[3]) - 1 
+        origin = int(instruction.split(' ')[3]) - 1
         target = int(instruction.split(' ')[5]) - 1
         for _ in range(quantity):
             crate = crates[origin].pop()
             crates[target].append(crate)
 
-    top_crates = ""
-    for crate in crates:
-        top = crate.pop()
-        top_crates += top
+    top_crates = ''.join([crate[-1] for crate in crates])
     print(f"Crates on top are {top_crates}")
 
 
