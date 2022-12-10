@@ -13,3 +13,4 @@
 |   7 | [Part 1](2022/day-07/part_one.py), [Part 2](2022/day-07/part_two.py) |
 |   8 | [Part 1](2022/day-08/part_one.py), [Part 2](2022/day-08/part_two.py) |
 |   9 | [Part 1](2022/day-09/part_one.py), [Part 2](2022/day-09/part_two.py) |
+|  10 | [Part 1](2022/day-10/part_one.py), [Part 2](2022/day-10/part_two.py) |
