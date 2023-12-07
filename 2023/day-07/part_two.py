@@ -16,42 +16,33 @@ card_value = {
     '2': 2,
     'J': 1
 }
+type_strength = {
+    "5": 70,
+    "14": 60,
+    "23": 50,
+    "113": 40,
+    "122": 30,
+    "1112": 20,
+    "11111": 10
+}
 
 for card_set in card_sets:
     hand = card_set[0]
-    if hand == "JJJJJ":
-        hand = "AAAAA"
     counts = Counter(card for card in hand if card != "J")
-    highest_most_common = sorted(counts.items(), key=lambda card: (card[1], card_value[card[0]]), reverse=True)[0][0]
+    highest_most_common = "A" if len(counts) == 0 else sorted(counts.items(), key=lambda card: (card[1], card_value[card[0]]), reverse=True)[0][0]
     hand = hand.replace("J", highest_most_common)
-    counts = Counter(hand).values()
-    strength = 0
-
-    if max(counts) == 5:
-        strength = 70
-    elif max(counts) == 4:
-        strength = 60
-    elif sorted(counts) == [2, 3]:
-        strength = 50
-    elif max(counts) == 3:
-        strength = 40
-    elif sorted(counts) == [1, 2, 2]:
-        strength = 30
-    elif sorted(counts) == [1, 1, 1, 2]:
-        strength = 20
-    else:
-        strength = 10
+    card_count = "".join(map(str, sorted(Counter(hand).values())))
+    strength = type_strength[card_count]
 
     hand = card_set[0]
-    for index, card in enumerate(hand):
+    for card in hand:
         strength = strength * 100 + card_value[card]
     card_set[2] = int(strength)
 
 total_winnings = 0
 sorted_card_sets = sorted(card_sets, key=lambda card_set: card_set[-1])
-for index, card_set in enumerate(sorted_card_sets):
+for rank, card_set in enumerate(sorted_card_sets, start=1):
     bid = int(card_set[1])
-    rank = index + 1
     total_winnings += bid * rank
 
 print(total_winnings)
