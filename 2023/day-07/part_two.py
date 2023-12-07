@@ -22,29 +22,29 @@ for card_set in card_sets:
     if hand == "JJJJJ":
         hand = "AAAAA"
     counts = Counter(card for card in hand if card != "J")
-    highest_most_common = sorted(counts.items(), key=lambda card: (card[1], -card_value[card[0]]), reverse=True)[0][0]
+    highest_most_common = sorted(counts.items(), key=lambda card: (card[1], card_value[card[0]]), reverse=True)[0][0]
     hand = hand.replace("J", highest_most_common)
     counts = Counter(hand).values()
-    strength = ""
+    strength = 0
 
     if max(counts) == 5:
-        strength = "7"
+        strength = 70
     elif max(counts) == 4:
-        strength = "6"
+        strength = 60
     elif sorted(counts) == [2, 3]:
-        strength = "5"
+        strength = 50
     elif max(counts) == 3:
-        strength = "4"
+        strength = 40
     elif sorted(counts) == [1, 2, 2]:
-        strength = "3"
+        strength = 30
     elif sorted(counts) == [1, 1, 1, 2]:
-        strength = "2"
+        strength = 20
     else:
-        strength = "1"
+        strength = 10
 
     hand = card_set[0]
     for index, card in enumerate(hand):
-        strength += str(card_value[card]) if len(str(card_value[card])) == 2 else "0" + str(card_value[card])
+        strength = strength * 100 + card_value[card]
     card_set[2] = int(strength)
 
 total_winnings = 0
@@ -54,5 +54,4 @@ for index, card_set in enumerate(sorted_card_sets):
     rank = index + 1
     total_winnings += bid * rank
 
-assert(total_winnings == 251735672)
 print(total_winnings)
