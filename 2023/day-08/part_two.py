@@ -1,13 +1,13 @@
 import math
 
-input = [line.strip() for line in open("input.txt", "r").readlines()]
+input = [line.strip() for line in open("input.txt")]
 nodes = input[2:]
 network = {}
 start_nodes = []
 
 for node in nodes:
-    start_node = node.split("=")[0].strip()
-    if start_node[-1] == "A":
+    start_node = node.split(" = ")[0]
+    if start_node.endswith("A"):
         start_nodes.append(start_node)
     left_node = node.split("=")[1].split(",")[0].split("(")[1]
     right_node = node.split("=")[1].split(",")[1].split(")")[0].strip()
