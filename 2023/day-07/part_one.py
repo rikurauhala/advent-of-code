@@ -1,4 +1,3 @@
-
 card_sets = [line.strip().split() + [0] for line in open("input.txt", "r").readlines()]
 card_value = {
     'A': 14,

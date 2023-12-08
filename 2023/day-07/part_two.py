@@ -1,30 +1,8 @@
 from collections import Counter
 
 card_sets = [line.strip().split() + [0] for line in open("input.txt", "r").readlines()]
-card_value = {
-    'A': 13,
-    'K': 12,
-    'Q': 11,
-    'T': 10,
-    '9': 9,
-    '8': 8,
-    '7': 7,
-    '6': 6,
-    '5': 5,
-    '4': 4,
-    '3': 3,
-    '2': 2,
-    'J': 1
-}
-type_strength = {
-    "5": 70,
-    "14": 60,
-    "23": 50,
-    "113": 40,
-    "122": 30,
-    "1112": 20,
-    "11111": 10
-}
+card_value = { 'A': 13, 'K': 12, 'Q': 11, 'T': 10, '9': 9, '8': 8, '7': 7, '6': 6, '5': 5, '4': 4, '3': 3, '2': 2, 'J': 1 }
+type_strength = { "5": 70, "14": 60, "23": 50, "113": 40, "122": 30, "1112": 20, "11111": 10 }
 
 for card_set in card_sets:
     hand = card_set[0]
