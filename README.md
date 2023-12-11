@@ -12,6 +12,7 @@
 |   6 | [Part 1](2023/day-06/part_one.py), [Part 2](2023/day-06/part_two.py) |
 |   7 | [Part 1](2023/day-07/part_one.py), [Part 2](2023/day-07/part_two.py) |
 |   8 | [Part 1](2023/day-08/part_one.py), [Part 2](2023/day-08/part_two.py) |
+|   9 | [Part 1](2023/day-09/part_one.py), [Part 2](2023/day-09/part_two.py) |
 
 ## 2022
 
