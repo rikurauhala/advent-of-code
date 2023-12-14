@@ -10,7 +10,6 @@ for row in tilted:
                 row[i], row[i-1] = row[i-1], row[i]
                 changed = True
 
-
 tilted = ["".join(list(row)) for row in zip(*tilted)]
 
 total_load = 0

@@ -17,7 +17,7 @@
 |  11 | [Part 1](2023/day-11/part_one.py), [Part 2](2023/day-11/part_two.py) |
 |  12 |                                                                      |
 |  13 | [Part 1](2023/day-13/part_one.py), [Part 2](2023/day-13/part_two.py) |
-|  14 |                                                                      |
+|  14 | [Part 1](2023/day-14/part_one.py)                                    |
 |  15 |                                                                      |
 |  16 |                                                                      |
 |  17 |                                                                      |
