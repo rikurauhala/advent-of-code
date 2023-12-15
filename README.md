@@ -2,8 +2,8 @@
 
 ## 2023
 
-| Day |                                                             Solution |
-| --: | -------------------------------------------------------------------: |
+| Day | Solution                                                             |
+| --: | :------------------------------------------------------------------- |
 |   1 | [Part 1](2023/day-01/part_one.py), [Part 2](2023/day-01/part_two.py) |
 |   2 | [Part 1](2023/day-02/part_one.py), [Part 2](2023/day-02/part_two.py) |
 |   3 | [Part 1](2023/day-03/part_one.py), [Part 2](2023/day-03/part_two.py) |
@@ -19,21 +19,11 @@
 |  13 | [Part 1](2023/day-13/part_one.py), [Part 2](2023/day-13/part_two.py) |
 |  14 | [Part 1](2023/day-14/part_one.py)                                    |
 |  15 | [Part 1](2023/day-15/part_one.py), [Part 2](2023/day-15/part_two.py) |
-|  16 |                                                                      |
-|  17 |                                                                      |
-|  18 |                                                                      |
-|  19 |                                                                      |
-|  20 |                                                                      |
-|  21 |                                                                      |
-|  22 |                                                                      |
-|  23 |                                                                      |
-|  24 |                                                                      |
-|  25 |                                                                      |
 
 ## 2022
 
-| Day |                                                             Solution |
-| --: | -------------------------------------------------------------------: |
+| Day | Solution                                                             |
+| --: | :------------------------------------------------------------------- |
 |   1 | [Part 1](2022/day-01/part_one.py), [Part 2](2022/day-01/part_two.py) |
 |   2 | [Part 1](2022/day-02/part_one.py), [Part 2](2022/day-02/part_two.py) |
 |   3 | [Part 1](2022/day-03/part_one.py), [Part 2](2022/day-03/part_two.py) |
