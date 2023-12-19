@@ -19,6 +19,10 @@
 |  13 | Point of Incidence              | [Part 1](2023/day-13/part_one.py), [Part 2](2023/day-13/part_two.py) |
 |  14 | Parabolic Reflector Dish        | [Part 1](2023/day-14/part_one.py)                                    |
 |  15 | Lens Library                    | [Part 1](2023/day-15/part_one.py), [Part 2](2023/day-15/part_two.py) |
+|  16 | The Floor Will Be Lava          |                                                                      |
+|  17 | Clumsy Crucible                 |                                                                      |
+|  18 | Lavaduct Lagoon                 |                                                                      |
+|  19 | Aplenty                         | [Part 1](2023/day-19/part_one.py)                                    |
 
 ## 2022
 
