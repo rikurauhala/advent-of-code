@@ -23,6 +23,7 @@
 |  17 | Clumsy Crucible                 |                                                                      |
 |  18 | Lavaduct Lagoon                 |                                                                      |
 |  19 | Aplenty                         | [Part 1](2023/day-19/part_one.py)                                    |
+|  20 | Pulse Propagation               | [Part 1](2023/day-20/part_one.py)                                    |
 
 ## 2022
 
